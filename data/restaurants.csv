@@ -1,0 +1,201 @@
+restaurant_id,category,rating
+1,Chinese,3.7
+2,Fast Food,3.2
+3,Biryani,3.2
+4,South Indian,4.1
+5,Fast Food,4.9
+6,South Indian,4.0
+7,Biryani,2.7
+8,Chinese,2.7
+9,South Indian,4.9
+10,North Indian,3.2
+11,North Indian,2.7
+12,Fast Food,4.0
+13,Biryani,4.1
+14,Fast Food,4.1
+15,Fast Food,3.2
+16,Fast Food,2.5
+17,North Indian,4.9
+18,North Indian,3.1
+19,Fast Food,4.2
+20,North Indian,4.3
+21,Biryani,4.0
+22,Fast Food,3.3
+23,North Indian,3.2
+24,South Indian,4.0
+25,Fast Food,4.7
+26,Fast Food,4.9
+27,Biryani,2.8
+28,Chinese,2.9
+29,Chinese,4.9
+30,Biryani,4.3
+31,Biryani,4.7
+32,Biryani,3.0
+33,Chinese,4.0
+34,Biryani,4.3
+35,North Indian,4.2
+36,Fast Food,3.5
+37,Fast Food,2.5
+38,South Indian,4.0
+39,South Indian,3.1
+40,Fast Food,3.6
+41,North Indian,4.9
+42,Chinese,3.5
+43,Chinese,4.6
+44,North Indian,3.0
+45,Chinese,4.2
+46,Biryani,4.9
+47,Fast Food,2.8
+48,Fast Food,2.5
+49,North Indian,3.6
+50,Chinese,2.7
+51,South Indian,4.4
+52,South Indian,4.8
+53,Chinese,3.6
+54,South Indian,3.1
+55,North Indian,3.6
+56,North Indian,4.3
+57,Chinese,2.5
+58,South Indian,4.0
+59,North Indian,4.0
+60,North Indian,4.1
+61,Biryani,3.1
+62,Biryani,4.3
+63,North Indian,2.7
+64,Chinese,3.0
+65,Fast Food,4.7
+66,Fast Food,4.3
+67,North Indian,2.5
+68,North Indian,3.1
+69,North Indian,3.0
+70,Chinese,3.2
+71,Biryani,3.1
+72,North Indian,2.7
+73,North Indian,3.6
+74,South Indian,4.3
+75,Chinese,4.0
+76,North Indian,4.2
+77,South Indian,2.7
+78,Fast Food,4.9
+79,North Indian,4.6
+80,North Indian,4.5
+81,South Indian,4.6
+82,Chinese,4.8
+83,North Indian,3.9
+84,Fast Food,3.0
+85,North Indian,4.0
+86,Fast Food,4.4
+87,Biryani,4.3
+88,Biryani,3.8
+89,Fast Food,2.7
+90,Chinese,3.4
+91,North Indian,4.8
+92,North Indian,4.0
+93,Biryani,3.8
+94,Fast Food,3.2
+95,North Indian,3.4
+96,North Indian,4.7
+97,Chinese,4.2
+98,South Indian,4.5
+99,Biryani,3.6
+100,Biryani,4.1
+101,South Indian,3.1
+102,North Indian,4.3
+103,Chinese,3.6
+104,Chinese,3.6
+105,Biryani,4.1
+106,Chinese,4.8
+107,South Indian,2.7
+108,North Indian,4.6
+109,South Indian,3.2
+110,Fast Food,3.6
+111,Biryani,2.6
+112,Chinese,3.3
+113,Fast Food,3.8
+114,Chinese,2.6
+115,North Indian,3.7
+116,North Indian,4.8
+117,North Indian,2.8
+118,Chinese,4.4
+119,Fast Food,3.5
+120,North Indian,4.1
+121,Fast Food,3.2
+122,Chinese,2.9
+123,Fast Food,2.9
+124,Chinese,2.7
+125,Chinese,3.0
+126,Biryani,4.2
+127,Chinese,4.7
+128,Chinese,4.5
+129,South Indian,4.2
+130,North Indian,2.8
+131,Biryani,3.2
+132,Biryani,3.3
+133,Biryani,3.1
+134,South Indian,3.8
+135,Chinese,3.8
+136,North Indian,3.4
+137,Fast Food,3.4
+138,Chinese,4.6
+139,South Indian,4.5
+140,Chinese,3.3
+141,Chinese,4.8
+142,South Indian,4.9
+143,Biryani,3.3
+144,Biryani,3.4
+145,North Indian,3.8
+146,North Indian,4.9
+147,Biryani,4.7
+148,Fast Food,2.8
+149,Chinese,3.5
+150,Fast Food,3.9
+151,Chinese,3.8
+152,Biryani,3.0
+153,North Indian,4.6
+154,North Indian,4.2
+155,Fast Food,4.6
+156,North Indian,4.6
+157,Biryani,4.4
+158,Fast Food,3.6
+159,Chinese,4.0
+160,North Indian,2.9
+161,South Indian,4.2
+162,North Indian,2.9
+163,Chinese,4.2
+164,Fast Food,3.1
+165,Chinese,2.8
+166,South Indian,2.9
+167,Biryani,2.5
+168,North Indian,4.3
+169,Fast Food,4.3
+170,Biryani,3.8
+171,Chinese,2.9
+172,Fast Food,2.7
+173,Biryani,2.5
+174,Fast Food,2.9
+175,South Indian,4.7
+176,South Indian,3.1
+177,North Indian,3.4
+178,North Indian,2.8
+179,South Indian,3.1
+180,Fast Food,3.8
+181,South Indian,4.0
+182,North Indian,3.1
+183,South Indian,2.6
+184,South Indian,3.5
+185,Fast Food,3.1
+186,Biryani,3.0
+187,North Indian,4.9
+188,Fast Food,4.0
+189,South Indian,3.9
+190,South Indian,3.5
+191,Biryani,3.6
+192,North Indian,3.9
+193,North Indian,4.2
+194,Chinese,4.3
+195,North Indian,2.9
+196,Biryani,3.8
+197,Chinese,3.5
+198,Chinese,4.7
+199,South Indian,4.1
+200,South Indian,3.8
