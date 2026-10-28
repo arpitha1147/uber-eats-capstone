@@ -63,3 +63,13 @@ Prerequisites
 Python 3.10+
 
 Virtual environment (.venv)
+
+### Day 4: Delivery Time Prediction & Operational Regression
+- **Data Pipeline**: Merged operational dimensions (restaurant prep dynamics, traffic conditions, weather impact, temporal windows) into `data/delivery_features.csv`.
+- **Exploratory Data Analysis**: Analyzed target distributions, evaluated outlier spreads, and inspected multi-collinear operational relationships.
+- **Model Implementations & Benchmarking**:
+  - **Baseline OLS Regression**: Standard linear estimation with one-hot encoded categorical parameters.
+  - **Regularized Estimators (Ridge & Lasso)**: Evaluated $L_1$ and $L_2$ shrinkage via 5-fold cross-validation.
+  - **Ensemble Learning (Random Forest)**: Captured non-linear interactions between weather, congestion, and preparation time.
+- **Evaluation Metrics**: Benchmarked MAE, RMSE, and $R^2$ across all models, generating actual-vs-predicted diagnostics and residual distributions.
+- **Operational Insights**: Identified distance, preparation duration, and traffic severity as key drivers for dynamic ETA estimation.
