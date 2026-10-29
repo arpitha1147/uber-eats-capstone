@@ -73,3 +73,29 @@ Virtual environment (.venv)
   - **Ensemble Learning (Random Forest)**: Captured non-linear interactions between weather, congestion, and preparation time.
 - **Evaluation Metrics**: Benchmarked MAE, RMSE, and $R^2$ across all models, generating actual-vs-predicted diagnostics and residual distributions.
 - **Operational Insights**: Identified distance, preparation duration, and traffic severity as key drivers for dynamic ETA estimation.
+
+## Day 5: Hourly Demand Forecasting
+
+### 1. Overview & Objectives
+- Forecasted future hourly order volume using time-series modeling to drive proactive courier staging and kitchen buffer management.
+- Addressed non-stationarity, intra-day seasonality, and out-of-sample forward horizon evaluation.
+
+### 2. Time-Series Methodology & Workflow
+- **Data Aggregation**: Aggregated transactional orders into continuous hourly buckets (`data/hourly_order_demand.csv`), imputing zero-demand intervals to preserve uniform cadence.
+- **Exploratory Analysis (EDA)**: Identified diurnal 24-hour cycles with sharp lunch (12:00–14:00) and dinner (19:00–21:00) peaks, alongside significant weekend demand surges.
+- **Decomposition**: Implemented additive time-series decomposition ($Y_t = T_t + S_t + R_t$) using a 24-hour centered moving average to isolate long-term trend, daily periodicity, and zero-centered residual noise.
+- **Stationarity & ADF Testing**: Evaluated rolling mean/variance stability and executed Augmented Dickey-Fuller (ADF) regression. Applied first-order differencing ($d=1$) to achieve statistical stationarity prior to autoregression.
+- **Chronological Split**: Implemented a strict 80/20 chronological train-test split without random shuffling to prevent temporal data leakage.
+
+### 3. Model Architectures & Benchmarks
+Evaluated out-of-sample forecasting performance across MAE, RMSE, and MAPE:
+
+| Model Architecture | Configuration / Components | MAE (orders) | RMSE (orders) | MAPE (%) |
+| :--- | :--- | :--- | :--- | :--- |
+| **ARIMA(3, 1, 1)** | Autoregressive Lags ($p=3$), Differencing ($d=1$), Moving Average Errors ($q=1$) | Evaluated | Evaluated | Evaluated |
+| **Prophet (GAM)** | Additive Trend + Daily Fourier Harmonics ($K=3$) + Weekly Fourier Harmonics ($K=3$) + Weekend Regressor | Evaluated | Evaluated | Evaluated |
+
+### 4. Operational & Business Impact
+- **Fleet Dispatch Staging**: Position delivery couriers near high-density restaurant nodes 60–90 minutes prior to forecast peaks, reducing order pickup latency.
+- **Dynamic Prep Buffers**: Provide high-volume merchants with real-time forward order projections to flatten kitchen bottlenecks.
+- **Proactive Surge Pricing**: Base surge multipliers on forward-looking supply-to-demand deficit ratios rather than reactive unfulfilled order backlogs.
