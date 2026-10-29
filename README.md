@@ -99,3 +99,45 @@ Evaluated out-of-sample forecasting performance across MAE, RMSE, and MAPE:
 - **Fleet Dispatch Staging**: Position delivery couriers near high-density restaurant nodes 60–90 minutes prior to forecast peaks, reducing order pickup latency.
 - **Dynamic Prep Buffers**: Provide high-volume merchants with real-time forward order projections to flatten kitchen bottlenecks.
 - **Proactive Surge Pricing**: Base surge multipliers on forward-looking supply-to-demand deficit ratios rather than reactive unfulfilled order backlogs.
+
+# Uber Eats Analytics & Machine Learning Capstone
+
+An end-to-end machine learning and operational intelligence system designed to optimize dispatch logistics, forecast hourly order demand, segment customer/restaurant cohorts, and reduce delivery delays using simulated Uber Eats platform data.
+
+---
+
+## 📌 Project Overview
+
+Food delivery platforms operate on tight unit economics driven by real-time balancing of customer expectations, merchant kitchen throughput, and dynamic courier dispatch. This 6-day capstone synthesizes exploratory data analysis, natural language processing, predictive regression, and time-series forecasting into an integrated, reproducible ML workflow.
+
+### Key Objectives
+1. **Customer & Restaurant Segmentation**: Group high-value cohorts and identify bottleneck kitchen partners using RFM metrics and K-Means clustering.
+2. **Sentiment Analysis & CX Diagnostics**: Classify customer review sentiment via NLP to detect primary root causes of churn and low ratings.
+3. **Delivery Duration & Tip Estimation**: Forecast order transit latency and driver tips using tree-based and regularized linear regression.
+4. **Demand Forecasting & Staging**: Predict forward-looking hourly order volumes using ARIMA and Prophet-style Generalized Additive Models (GAM) to drive proactive fleet dispatch.
+5. **Integrated Pipeline & Strategy**: Consolidate models into an end-to-end analytical mart and translate technical metrics into data-backed business decisions.
+
+---
+
+## 🛠️ Repository Structure
+
+```text
+uber-eats-capstone/
+├── data/
+│   ├── orders.csv                       # Historical order transaction logs
+│   ├── customers.csv                    # Customer profiles and registration metadata
+│   ├── restaurants.csv                  # Merchant metadata, cuisine, and coordinates
+│   ├── reviews.csv                      # User review text and star ratings
+│   ├── delivery_features.csv            # Engineered trip, weather, and distance metrics
+│   ├── hourly_order_demand.csv          # Aggregated, gap-filled time-series demand
+│   └── cleaned_reviews.csv              # Tokenized, preprocessed review corpora
+├── notebooks/
+│   ├── 01_customer_segmentation.ipynb   # Day 2: RFM feature engineering & K-Means clustering
+│   ├── 02_sentiment_analysis.ipynb       # Day 3: NLP preprocessing, TF-IDF & sentiment classifiers
+│   ├── 03_delivery_time_prediction.ipynb # Day 4: Delivery duration & tip regression benchmarks
+│   ├── 04_demand_forecasting.ipynb      # Day 5: Stationarity, ARIMA & Prophet time-series models
+│   └── 05_end_to_end_pipeline_insights.ipynb # Day 6: Master ML pipeline, drivers & business strategy
+├── src/
+│   └── data_generation.py               # Dataset synthesis and seed generation logic
+├── .gitignore                           # Virtual environments, cache & system exclusions
+└── README.md                            # Complete architecture, benchmarks & documentation
